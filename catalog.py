@@ -10,14 +10,14 @@ def make_book(book_id, title, author, genre):
         }
         library.append(library_book)
         
-name = input("What is your name? " )
+name = input("What is your name? ")
 print("%s, Welcome to Sishir's Library 3.0" %(name))
 while True:
-        interface = input("Do you want to add a [N]ew book, [R]emove a new book, [C]heck books in the Library?, [E]xit Program " )
+        interface = input("Do you want to add a [N]ew book, [R]emove a new book, [C]heck books in the Library?, [E]xit Program ")
         if interface == "N" :
                 book_id = input( "Make a book id? ")
                 title = input("What is the title? ")
-                author = input("Who is the author ?")
+                author = input("Who is the author? ")
                 genre = input("What is the genre? ")
                 add_book = make_book(book_id, title, author, genre)
         if interface == "C" :
